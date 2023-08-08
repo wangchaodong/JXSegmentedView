@@ -233,7 +233,7 @@ open class JXSegmentedView: UIView, JXSegmentedViewRTLCompatible {
             collectionView.contentInsetAdjustmentBehavior = .never
         }
         if segmentedViewShouldRTLLayout() {
-            collectionView.semanticContentAttribute = .forceLeftToRight
+//            collectionView.semanticContentAttribute = .forceLeftToRight
             segmentedView(horizontalFlipForView: collectionView)
         }
         addSubview(collectionView)

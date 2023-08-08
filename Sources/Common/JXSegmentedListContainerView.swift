@@ -156,7 +156,7 @@ open class JXSegmentedListContainerView: UIView, JXSegmentedViewListContainer, J
                 self.collectionView.contentInsetAdjustmentBehavior = .never
             }
             if segmentedViewShouldRTLLayout() {
-                collectionView.semanticContentAttribute = .forceLeftToRight
+//                collectionView.semanticContentAttribute = .forceLeftToRight
                 segmentedView(horizontalFlipForView: collectionView)
             }
             containerVC.view.addSubview(collectionView)
