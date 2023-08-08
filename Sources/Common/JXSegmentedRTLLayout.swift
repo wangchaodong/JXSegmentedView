@@ -18,7 +18,8 @@ public protocol JXSegmentedViewRTLCompatible: AnyObject {
 public extension JXSegmentedViewRTLCompatible {
     /// 根据当前系统布局方式返回是否需要RTL布局
     func segmentedViewShouldRTLLayout() -> Bool {
-        UIView.userInterfaceLayoutDirection(for: UIView.appearance().semanticContentAttribute) == .rightToLeft
+//        UIView.userInterfaceLayoutDirection(for: UIView.appearance().semanticContentAttribute) == .rightToLeft
+        false
     }
 
     /// 在RTL布局下水平翻转当前视图
